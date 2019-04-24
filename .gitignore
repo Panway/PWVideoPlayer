@@ -1,0 +1,36 @@
+#fastlane 打包生成的文件
+WeeXTemplate.app.dSYM.zip
+WeeXTemplateTest.app.dSYM.zip
+#weex相关
+ttttt
+
+# Xcode
+.DS_Store
+*/build/*
+*.pbxuser
+*.ipa
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+profile
+*.moved-aside
+DerivedData
+.idea/
+*.hmap
+*.xccheckout
+*.xcworkspace
+!default.xcworkspace
+build/
+
+#CocoaPods
+Pods
+!Podfile
+!Podfile.lock
+
+#python
+*.py[cod]
