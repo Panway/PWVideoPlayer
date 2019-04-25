@@ -8,6 +8,4 @@
 
 #import "PWPlayerDelegate.h"
 
-@implementation PWPlayerDelegate
 
-@end

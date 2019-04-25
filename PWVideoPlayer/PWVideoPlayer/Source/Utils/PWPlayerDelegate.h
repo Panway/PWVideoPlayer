@@ -9,9 +9,27 @@
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
+typedef enum : NSUInteger {
+    //play begin
+    PWPlayStatusBegin,
+    //play end
+    PWPlayStatusEnd,
+    //play fail
+    PWPlayStatusFail,
+    //play pause
+    PWPlayStatusPause,
+    //play unkown
+    PWPlayStatusUnkown,
+} PWPlayStatus;
 
-@interface PWPlayerDelegate : NSObject
+
+
+@protocol PWPlayerDelegate <NSObject>
+
+@optional
+-(void)PWPlayStatusChange:(PWPlayStatus)status;
 
 @end
+
 
 NS_ASSUME_NONNULL_END
