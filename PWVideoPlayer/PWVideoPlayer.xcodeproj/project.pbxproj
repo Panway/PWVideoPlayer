@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		18D28DD222703BB100EA2E28 /* PWDeviceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D28DD122703BB100EA2E28 /* PWDeviceTool.m */; };
-		18D28DD52270417E00EA2E28 /* PWPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D28DD42270417E00EA2E28 /* PWPlayer.m */; };
 		18D28DD92270537F00EA2E28 /* PWPlayerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D28DD82270537F00EA2E28 /* PWPlayerDelegate.m */; };
+		6016EA5522719C1000321C42 /* PWVideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6016EA5422719C1000321C42 /* PWVideoPlayerView.m */; };
+		6016EA5A2271CD9500321C42 /* PWPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6016EA582271CD9500321C42 /* PWPlayer.m */; };
 		6047AD942270332900B11B03 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6047AD932270332900B11B03 /* AppDelegate.m */; };
 		6047AD972270332900B11B03 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6047AD962270332900B11B03 /* ViewController.m */; };
 		6047AD9A2270332900B11B03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6047AD982270332900B11B03 /* Main.storyboard */; };
@@ -41,10 +42,12 @@
 /* Begin PBXFileReference section */
 		18D28DD022703BB100EA2E28 /* PWDeviceTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWDeviceTool.h; sourceTree = "<group>"; };
 		18D28DD122703BB100EA2E28 /* PWDeviceTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWDeviceTool.m; sourceTree = "<group>"; };
-		18D28DD32270417E00EA2E28 /* PWPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWPlayer.h; sourceTree = "<group>"; };
-		18D28DD42270417E00EA2E28 /* PWPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWPlayer.m; sourceTree = "<group>"; };
 		18D28DD72270537E00EA2E28 /* PWPlayerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWPlayerDelegate.h; sourceTree = "<group>"; };
 		18D28DD82270537F00EA2E28 /* PWPlayerDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWPlayerDelegate.m; sourceTree = "<group>"; };
+		6016EA5322719C1000321C42 /* PWVideoPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWVideoPlayerView.h; sourceTree = "<group>"; };
+		6016EA5422719C1000321C42 /* PWVideoPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWVideoPlayerView.m; sourceTree = "<group>"; };
+		6016EA582271CD9500321C42 /* PWPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWPlayer.m; sourceTree = "<group>"; };
+		6016EA592271CD9500321C42 /* PWPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWPlayer.h; sourceTree = "<group>"; };
 		6047AD8F2270332900B11B03 /* PWVideoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PWVideoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6047AD922270332900B11B03 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6047AD932270332900B11B03 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -95,8 +98,8 @@
 			children = (
 				18D28DD022703BB100EA2E28 /* PWDeviceTool.h */,
 				18D28DD122703BB100EA2E28 /* PWDeviceTool.m */,
-				18D28DD32270417E00EA2E28 /* PWPlayer.h */,
-				18D28DD42270417E00EA2E28 /* PWPlayer.m */,
+				6016EA592271CD9500321C42 /* PWPlayer.h */,
+				6016EA582271CD9500321C42 /* PWPlayer.m */,
 				18D28DD72270537E00EA2E28 /* PWPlayerDelegate.h */,
 				18D28DD82270537F00EA2E28 /* PWPlayerDelegate.m */,
 			);
@@ -164,6 +167,8 @@
 				18D28DCF22703A9000EA2E28 /* Utils */,
 				6047ADC5227033D800B11B03 /* PWVideoPlayer.h */,
 				6047ADC6227033D800B11B03 /* PWVideoPlayer.m */,
+				6016EA5322719C1000321C42 /* PWVideoPlayerView.h */,
+				6016EA5422719C1000321C42 /* PWVideoPlayerView.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -299,12 +304,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6047AD972270332900B11B03 /* ViewController.m in Sources */,
-				18D28DD52270417E00EA2E28 /* PWPlayer.m in Sources */,
+				6016EA5A2271CD9500321C42 /* PWPlayer.m in Sources */,
 				18D28DD222703BB100EA2E28 /* PWDeviceTool.m in Sources */,
 				18D28DD92270537F00EA2E28 /* PWPlayerDelegate.m in Sources */,
 				6047ADC7227033D800B11B03 /* PWVideoPlayer.m in Sources */,
 				6047ADA22270332E00B11B03 /* main.m in Sources */,
 				6047AD942270332900B11B03 /* AppDelegate.m in Sources */,
+				6016EA5522719C1000321C42 /* PWVideoPlayerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,7 +482,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 49ZCVSQ8X9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PWVideoPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -494,7 +500,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 49ZCVSQ8X9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PWVideoPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
